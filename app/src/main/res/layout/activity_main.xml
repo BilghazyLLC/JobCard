@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvJobCard"
+        android:text="Zeniteck Job Card"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:inputType="textPersonName|textAutoComplete|textAutoCorrect|textCapWords"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Name Of Customer"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/edtCustomerName"
+                android:drawableStart="@drawable/twotone_account_circle_24px"
+                android:drawablePadding="16dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/twotone_account_circle_24px" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:inputType="textPersonName|textAutoComplete|textAutoCorrect|textCapWords"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint=" Phone Number"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/edtPhoneNumber"
+            android:drawableStart="@drawable/twotone_phone_24px"
+            android:drawablePadding="16dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/twotone_phone_24px" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:inputType="textPersonName|textAutoComplete|textAutoCorrect|textCapWords"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint=" Laptop or Phone Model"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/edtLaptopModel"
+            android:drawableStart="@drawable/twotone_list_alt_24px"
+            android:drawablePadding="16dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/twotone_list_alt_24px" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:inputType="textPersonName|textAutoComplete|textAutoCorrect|textCapWords"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint=" Fault Or Problem"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/edtProblem"
+            android:drawableStart="@drawable/twotone_settings_24px"
+            android:drawablePadding="16dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/twotone_phone_24px" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:inputType="textPersonName|textAutoComplete|textAutoCorrect|textCapWords"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint=" HDD and Ram Size"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/edtHddRamSize"
+            android:drawableStart="@drawable/twotone_room_service_24px"
+            android:drawablePadding="16dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/twotone_room_service_24px" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:inputType="textPersonName|textAutoComplete|textAutoCorrect|textCapWords"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint=" Date"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/edtDate"
+            android:drawableStart="@drawable/twotone_calendar_today_24px"
+            android:drawablePadding="16dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/twotone_calendar_today_24px" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        app:cornerRadius="20dp"
+        android:layout_margin="10dp"
+        android:id="@+id/saveButton"
+
+        android:layout_gravity="center"
+        android:text="Record"
+        android:layout_height="wrap_content"/>
+
+<!--    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"  -->
+
+</LinearLayout>
